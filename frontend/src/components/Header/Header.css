@@ -1,10 +1,13 @@
-.header{
-    height: 34vw;
+.header {
+    height: 38vw;
+    width: 100%; /* Add this to ensure the header takes full width */
+    max-width: 1200px; /* You can set a max-width if needed */
     margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
+    background: url('/header_img.png') no-repeat center;
+    background-size: contain; /* You can switch to cover if you want the image to cover the entire area */
     position: relative;
 }
+
 .header-contents{
     position: absolute;
     display: flex;
@@ -14,6 +17,7 @@
     max-width: 50%;
     bottom: 10%;
     left:6vw;
+    
     animation: fadeIn 3s;
 
 }

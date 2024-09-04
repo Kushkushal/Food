@@ -1,42 +1,31 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useContext } from 'react';
-import './FoodItem.css';
-import { assets } from '../../assets/assets';
+import React, { useContext } from 'react'
+import './FoodItem.css'
+import { assets } from '../../assets/assets'
 import { StoreContext } from '../../context/StoreContext';
 
+// eslint-disable-next-line react/prop-types
 const FoodItem = ({ id, name, price, description, image }) => {
   const { cartItems, addToCart, removeFromCart, url } = useContext(StoreContext);
+
+  // Check if cartItems and cartItems[id] are defined
+  const itemInCart = cartItems && cartItems[id];
 
   return (
     <div className="food-item">
       <div className="food-item-img-container">
-        <img
-          className="food-item-image"
-          src={`${url ? url : ''}/images/${image ? image : 'default_image.png'}`} // Added default fallback for image
-          alt={name}
-        />
-        {!cartItems?.[id] ? (
-          <img
-            className="add"
-            onClick={() => addToCart(id)}
-            src={assets.add_icon_white}
-            alt="Add to Cart"
-          />
-        ) : (
-          <div className="food-item-counter">
-            <img
-              onClick={() => removeFromCart(id)}
-              src={assets.remove_icon_red}
-              alt="Remove from Cart"
-            />
-            <p>{cartItems[id]}</p>
-            <img
-              onClick={() => addToCart(id)}
-              src={assets.add_icon_green}
-              alt="Add more"
-            />
-          </div>
-        )}
+        <img className='food-item-image' src={url + "/images/" + image} alt="" />
+        {
+          !itemInCart ? (
+            <img className='add' onClick={() => addToCart(id)} src={assets.add_icon_white} alt="Add to cart" />
+          ) : (
+            <div className='food-item-counter'>
+              <img onClick={() => removeFromCart(id)} src={assets.remove_icon_red} alt="Remove from cart" />
+              <p>{cartItems[id]}</p>
+              <img onClick={() => addToCart(id)} src={assets.add_icon_green} alt="Add more" />
+            </div>
+          )
+        }
       </div>
       <div className="food-item-info">
         <div className="food-item-name-rating">
@@ -44,10 +33,10 @@ const FoodItem = ({ id, name, price, description, image }) => {
           <img src={assets.rating_starts} alt="Rating" />
         </div>
         <p className="food-item-desc">{description}</p>
-        <p className="food-item-price">${price}</p>
+        <p className="food-item-price">₹{price}</p>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default FoodItem;

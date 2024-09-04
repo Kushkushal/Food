@@ -7,7 +7,8 @@
 }
 .navbar .logo{
     width: 180px;
-    height: 120px;
+    height: 90px;
+    padding-top: 12px;
 }
 .navbar-menu{
     display: flex;
@@ -90,6 +91,15 @@
 .nav-profile-dropdown li:hover{
     color: tomato;
 }
+
+.navbar-search-input {
+    display: block;
+    padding: 5px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
 @media (max-width:1050px) {
     .navbar .logo{
         width: 140px;
@@ -106,6 +116,9 @@
     }
     .navbar-right button{
         padding: 8px 25px;
+    }
+    .navbar-search-input{
+        width: 120px;
     }
     
 }
@@ -126,6 +139,9 @@
     .navbar-right button{
         padding: 7px 20px;
         font-size: 15px;
+    }
+    .navbar-search-input{
+        width: 60px;
     }
     
 }

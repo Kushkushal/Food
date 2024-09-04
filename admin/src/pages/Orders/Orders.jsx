@@ -83,4 +83,5 @@ const Orders = ({url}) => {
   )
 }
 
-export default Orders
+
+export default Orders;
