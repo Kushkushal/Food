@@ -101,9 +101,10 @@ html {
 
 @media (max-width: 700px) {
     .explore-menu-list-item {
-        flex: 1 0 calc(33.33% - 20px); /* 3 items per row on small screens */
+        flex: 1 0 calc(50% - 20px); /* 2 items per row on small screens */
     }
 }
+
 
 
 
