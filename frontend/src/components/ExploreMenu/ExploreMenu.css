@@ -1,3 +1,8 @@
+/* Add this to your ExploreMenu.css or global CSS file */
+html {
+    scroll-behavior: smooth;
+  }
+  
 .explore-menu {
     display: flex;
     flex-direction: column;
@@ -30,35 +35,40 @@
     display: none;
 }
 
-.explore-menu-list-item {
-    flex: 1 0 calc(12.5% - 20px); /* Fixed size to ensure 8 items per row */
+.explore-menu-list-item.card {
+    width: 300px; /* Width of the card */
+    height: 200px; /* Height of the card */
+    background-color: white; /* Card background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow for card effect */
+    border-radius: 12px; /* Round corners */
+    padding: 15px; /* Add padding */
+    transition: 0.2s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
-    box-sizing: border-box; /* Include padding in width calculations */
-    text-align: center; /* Center align text */
-    overflow: hidden; /* Hide overflowing content */
-}
-
-.explore-menu-list-item img {
-    width: 6vw; /* Adjusted to fit within items */
-    min-width: 50px;
     cursor: pointer;
-    border-radius: 50%; /* Makes the image circular */
-    transition: 0.2s;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    text-align: center;
 }
 
-.explore-menu-list-item p {
-    margin-top: 10px;
+.explore-menu-list-item.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.explore-menu-list-item.card img {
+    width: 120px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.explore-menu-list-item.card p {
+    margin-top: 20px; /* Increase margin-top to move the text down */
+    font-size: 16px;
     color: #747474;
-    font-size: max(1.2vw, 12px);
-    cursor: pointer;
-    white-space: normal; /* Allows text to wrap to multiple lines */
-    overflow: hidden; /* Hides any overflow content */
-    text-overflow: clip; /* Ensures no ellipsis */
+    font-weight: 700;
 }
+
 
 .explore-menu hr {
     margin: 10px 0px;
@@ -71,6 +81,12 @@
     border: 4px solid tomato;
     padding: 2px;
 }
+.menu-timings {
+    font-size: 0.69rem;
+    color: #919090;
+    margin-top: 16px;
+  }
+  
 
 @media (max-width: 1050px) {
     .explore-menu-text {
@@ -88,3 +104,8 @@
         flex: 1 0 calc(33.33% - 20px); /* 3 items per row on small screens */
     }
 }
+
+
+
+
+

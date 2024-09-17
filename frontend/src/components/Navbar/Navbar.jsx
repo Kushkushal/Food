@@ -29,7 +29,10 @@ const logout=()=>{
         <a href="https://food-del-frontendd.onrender.com/" onClick={()=>setMenu("contact-us")} className={menu==="contact-us"?"active":""}>Contact Us</a>
       </ul>
       <div className="navbar-right">
-        <img src={assets.search_icon} alt="" />
+
+       {/* <a href='https://deli-frontend.onrender.com/'><b>Groceries</b></a> */}
+
+
         <div className="navbar-search-icon">
            <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link> 
             <div className={getTotalCartAmount()===0 ?"":"dot"}>

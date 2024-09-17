@@ -99,6 +99,10 @@
     border: 1px solid #ccc;
     border-radius: 4px;
   }
+  b{
+    color: #49557e;
+    cursor: pointer;
+  }
   
 @media (max-width:1050px) {
     .navbar .logo{

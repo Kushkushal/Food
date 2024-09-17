@@ -1,26 +1,47 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import './ExploreMenu.css'
-import { menu_list } from '../../assets/assets'
+import React from 'react';
+import './ExploreMenu.css';
+import { menu_list } from '../../assets/assets';
+
 // eslint-disable-next-line react/prop-types
-const ExploreMenu = ({category,setCategory}) => {
+const ExploreMenu = ({ category, setCategory }) => {
+
+  const handleScroll = (menu_name) => {
+    const targetSection = document.getElementById(menu_name);
+    if (targetSection) {
+      targetSection.scrollIntoView({
+        behavior: 'smooth', // Smooth scrolling
+        block: 'start' // Aligns the target element to the top of the screen
+      });
+    }
+  };
+
   return (
     <div className='explore-menu' id='explore-menu'>
- 
-      <div className="explore-menu-list">
-        {menu_list.map((item,index)=>{
-            return (
-                <div onClick={()=>setCategory(prev=>prev==item.menu_name?"All":item.menu_name)} key={index} className='explore-menu-list-item'>
-                    <img className={category==item.menu_name?"active":""} src={item.menu_image} alt="" />
-                    <p>{item.menu_name}</p>
+      {/* Add the title "Hotels Near You" */}
+      <h2 className="explore-menu-title">Hotels Near You</h2> 
 
-                    </div>
-            )
+      <div className="explore-menu-list">
+        {menu_list.map((item, index) => {
+          return (
+            <div 
+              onClick={() => {
+                setCategory(prev => prev === item.menu_name ? "All" : item.menu_name);
+                handleScroll(item.menu_name); // Scroll to the related section
+              }} 
+              key={index} 
+              className='explore-menu-list-item card' // Added 'card' class
+            >
+              <img className={category === item.menu_name ? "active" : ""} src={item.menu_image} alt={item.menu_name} />
+              <p>{item.menu_name}</p>
+              <b className="menu-timings">{item.timings}</b> {/* Display timings here */}
+            </div>
+          )
         })}
       </div>
-      <hr/>
+      <hr />
     </div>
-  )
+  );
 }
 
-export default ExploreMenu
+export default ExploreMenu;

@@ -13,7 +13,7 @@ const Add = ({ url }) => {
         name: "",
         description: "",
         price: "",
-        category: "Salad"
+        category: "Sri Devi Curry Point"
     })
 
     const onChangeHandler = (event) => {
@@ -38,7 +38,7 @@ const Add = ({ url }) => {
                 name: "",
                 description: "",
                 price: "",
-                category: "Salad"
+                category: "Sri Devi Curry Point"
             })
             setImage(false)
             toast.success(response.data.message)
@@ -74,32 +74,24 @@ const Add = ({ url }) => {
                     <div className="add-category flex-col">
                         <p>Product Category</p>
                         <select onChange={onChangeHandler} name="category" >
-                            <option value="Atta, Maida & Besan">Atta, Maida & Besan</option>
-                            <option value="Rice & Poha">Rice & Poha</option>
-                            <option value="Dals & Grains">Dals & Grains</option>
-                            <option value="Oil & Ghee">Oil & Ghee</option>
-                            <option value="Masalas & Spices">Masalas & Spices</option>
-                            <option value="Sugar & Salt">Sugar & Salt</option>
-                            <option value="Milk & Egg">Milk & Egg</option>
-                            <option value="Tea, Coffee & Nutrition Drinks">Tea, Coffee & Nutrition Drinks</option>
-                            <option value="Bread, Cheese & Butter">Bread, Cheese & Butter</option>
-                            <option value="Noodles & Pasta">Noodles & Pasta</option>
-                            <option value="Pickles & Papads">Pickles & Papads</option>
-                            <option value="Biscuits & Cakes">Biscuits & Cakes</option>
-                            <option value="Chocolates & Candies">Chocolates & Candies</option>
-                            <option value="Drinks & Juices">Drinks & Juices</option>
-                            <option value="Chips & Namkens">Chips & Namkens</option>
-                            <option value="Oral Care">Oral Care</option>
-                            <option value="FaceWash & Skin Cream">FaceWash & Skin Cream</option>
-                            <option value="Soaps & Handwash">Soaps & Handwash</option>
-                            <option value="Hair Oil & Shampoo">Hair Oil & Shampoo</option>
-                            <option value="Diapers & Pads">Diapers & Pads</option>
-                            <option value="Cleaning Laundry">Cleaning Laundry</option>
-                            <option value="Home Care">Home Care</option>
-                            <option value="Pooja Supplies">Pooja Supplies</option>
-                            <option value="Sauces & Honey">Sauces & Honey</option>
-                            <option value="Cereals & Breakfast">Cereals & Breakfast</option>
-                            <option value="Dry Fruits">Dry Fruits</option>
+                            <option value="Sri Devi Curry Point">Sri Devi Curry Point</option>
+                            <option value="Sharanya's Kitchen">Sharanya's Kitchen</option>
+                            <option value="Desi Food Box">Desi Food Box</option>
+                            <option value="Breakfast Stall">Breakfast Stall</option>
+                            <option value="Desi Hutt">Desi Hutt</option>
+                            <option value="Swad Vipasa">Swad Vipasa</option>
+                            <option value="Chicken Little">Chicken Little</option>
+                            <option value="Sri Lakshmi Hotel">Sri Lakshmi Hotel</option>
+                            <option value="Katti Rolls">Katti Rolls</option>
+                            <option value="G.S Military Hotel">G.S Military Hotel</option>
+                            <option value="Bite & Beans Cafe">Bite & Beans Cafe</option>
+                            <option value="Chats Corner">Chats Corner</option>
+                            <option value="Bake & Cafe">Bake & Cafe</option>
+                            <option value="Juice Junction">Juice Junction</option>
+                            <option value="Tandoori Chai">Tandoori Chai</option>
+                            <option value="Fish Kabab Center">Fish Kabab Center</option>
+                            <option value="S.M Chicken Center">S.M Chicken Center</option>
+                           
                         </select>
                     </div>
                     <div className="add-price flex-col">

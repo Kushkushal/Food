@@ -19,25 +19,13 @@ import menu_14 from './menu_14.jpg';
 import menu_15 from './menu_15.jpg';
 import menu_16 from './menu_16.jpg';
 import menu_17 from './menu_17.jpg';
-import menu_18 from './menu_18.jpg';
-import menu_19 from './menu_19.jpg';
-import menu_20 from './menu_20.jpg';
-import menu_21 from './menu_21.jpg';
-import menu_22 from './menu_22.jpg';
-import menu_23 from './menu_23.jpg';
-import menu_24 from './menu_24.jpg';
-import menu_25 from './menu_25.jpg';
-import menu_26 from './menu_26.jpg';
+
 
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
 import food_3 from './food_3.png'
-import food_4 from './food_4.png'
-import food_5 from './food_5.png'
-import food_6 from './food_6.png'
-import food_7 from './food_7.png'
-import food_8 from './food_8.png'
+
 import food_9 from './food_9.png'
 import food_10 from './food_10.png'
 import food_11 from './food_11.png'
@@ -45,7 +33,7 @@ import food_12 from './food_12.png'
 import food_13 from './food_13.png'
 import food_14 from './food_14.png'
 import food_15 from './food_15.png'
-import food_16 from './food_16.png'
+
 import food_17 from './food_17.png'
 import food_18 from './food_18.png'
 import food_19 from './food_19.png'
@@ -68,9 +56,9 @@ import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
 import app_store from './app_store.png'
 import play_store from './play_store.png'
-import linkedin_icon from './linkedin_icon.png'
 import facebook_icon from './facebook_icon.png'
-import twitter_icon from './twitter_icon.png'
+import whatsapp from './whatsapp.png'
+import insta from './insta.png'
 import cross_icon from './cross_icon.png'
 import selector_icon from './selector_icon.png'
 import rating_starts from './rating_starts.png'
@@ -90,9 +78,9 @@ export const assets = {
     remove_icon_red,
     app_store,
     play_store,
-    linkedin_icon,
+    insta,
     facebook_icon,
-    twitter_icon,
+    whatsapp,
     cross_icon,
     selector_icon,
     profile_icon,
@@ -103,109 +91,92 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Atta, Maida & Besan",
-        menu_image: menu_1
+        menu_name: "Sri Devi Curry Point",
+        menu_image: menu_1,
+        timings: "8:30 AM - 10:00 PM"
     },
     {
-        menu_name: "Rice & Poha",
-        menu_image: menu_2
+        menu_name: "Sharanya's Kitchen",
+        menu_image: menu_2,
+        timings: "8:00 AM - 10:00 PM"
     },
     {
-        menu_name: "Dals & Grains",
-        menu_image: menu_3
+        menu_name: "Desi Food Box",
+        menu_image: menu_3,
+        timings: "12:00 PM - 10:00 PM"
     },
     {
-        menu_name: "Oil & Ghee",
-        menu_image: menu_4
+        menu_name: "Breakfast Stall",
+        menu_image: menu_4,
+        timings: "8:00 AM - 12:30 PM"
     },
     {
-        menu_name: "Masalas & Spices",
-        menu_image: menu_5
+        menu_name: "Desi Hutt",
+        menu_image: menu_5,
+        timings: "4:00 PM - 10:00 PM"
     },
     {
-        menu_name: "Sugar & Salt",
-        menu_image: menu_6
+        menu_name: "Swad Vipasa",
+        menu_image: menu_6,
+        timings: "8:00 AM - 9:00 PM"
     },
     {
-        menu_name: "Milk & Egg",
-        menu_image: menu_7
+        menu_name: "Chicken Little",
+        menu_image: menu_7,
+        timings: "1:00 PM - 10:30 PM"
     },
     {
-        menu_name: "Tea, Coffe & Nutrition Drinks",
-        menu_image: menu_8
+        menu_name: "Sri Lakshmi Hotel",
+        menu_image: menu_8,
+        timings: "8:00 AM - 10:00 PM"
     },
     {
-        menu_name: "Bread, Cheese & Butter",
-        menu_image: menu_9
+        menu_name: "Katti Rolls",
+        menu_image: menu_9,
+        timings: "2:00 PM - 10:00 PM"
     },
     {
-        menu_name: "Noodles & Pasta",
-        menu_image: menu_10
+        menu_name: "G.S Military Hotel",
+        menu_image: menu_10,
+        timings: "12:00 PM - 10:00 PM"
     },
     {
-        menu_name: "Pickles & Papads",
-        menu_image: menu_11
+        menu_name: "Bite & Beans Cafe",
+        menu_image: menu_11,
+        timings: "9:00 AM - 10:00 PM"
     },
     {
-        menu_name: "Biscuits & Cakes",
-        menu_image: menu_12
+        menu_name: "Chats Corner",
+        menu_image: menu_12,
+        timings: "1:00 PM - 9:00 PM"
     },
     {
-        menu_name: "Chocolates & Candies",
-        menu_image: menu_13
+        menu_name: "Bake & Cafe",
+        menu_image: menu_13,
+        timings: "8:00 AM - 10:00 PM"
     },
     {
-        menu_name: "Drinks & Juices",
-        menu_image: menu_14
+        menu_name: "Juice Junction",
+        menu_image: menu_14,
+        timings: "4:00 PM - 9:30 PM"
     },
     {
-        menu_name: "Chips & Namkens",
-        menu_image: menu_15
+        menu_name: "Tandoori Chai",
+        menu_image: menu_15,
+        timings: "6:00 PM - 10:00 PM"
     },
     {
-        menu_name: "Oral Care",
-        menu_image: menu_16
+        menu_name: "Fish Kabab Center",
+        menu_image: menu_16,
+        timings: "7:00 PM - 10:00 PM"
     },
     {
-        menu_name: "FaceWash & Skin Cream",
-        menu_image: menu_17
-    },
-    {
-        menu_name: "Soaps & Handwash",
-        menu_image: menu_18
-    },
-    {
-        menu_name: "Hair Oil & Shampoo",
-        menu_image: menu_19
-    },
-    {
-        menu_name: "Diapers & Pads",
-        menu_image: menu_20
-    },
-    {
-        menu_name: "Cleaning Laundry",
-        menu_image: menu_21
-    },
-    {
-        menu_name: "Home Care",
-        menu_image: menu_22
-    },
-    {
-        menu_name: "Pooja Supplies",
-        menu_image: menu_23
-    },
-    {
-        menu_name: "Sauces & Honey",
-        menu_image: menu_24
-    },
-    {
-        menu_name: "Cereals & Breakfast",
-        menu_image: menu_25
-    },
-    {
-        menu_name: "Dry Fruits",
-        menu_image: menu_26
-    }]
+        menu_name: "S.M Chicken Center",
+        menu_image: menu_17,
+        timings: "8:00 AM - 10:00 PM"
+    }
+]
+
 
     export const food_list = [
         // Atta, Maida & Besan
