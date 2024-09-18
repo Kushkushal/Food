@@ -144,3 +144,32 @@ html {
         font-size: 12px; /* Reduce text size for small screens */
     }
 }
+.explore-menu-title {
+    font-size: 24px; /* Default size */
+    font-weight: 600;
+    color: #262626;
+    margin-bottom: 20px;
+    text-align: center; /* Center-align for all screen sizes */
+}
+
+@media (max-width: 700px) {
+    .explore-menu-title {
+        font-size: 20px; /* Slightly smaller for tablet screens */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .explore-menu-title {
+        font-size: 18px; /* Smaller font size for small mobile screens */
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .explore-menu-title {
+        font-size: 16px; /* Even smaller for very small screens */
+        margin-bottom: 8px;
+    }
+}
+
