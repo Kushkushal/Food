@@ -10,6 +10,7 @@
   width: 100%;
   max-width: max(30%, 500px);
   padding-bottom: 20px; /* Add bottom padding for spacing */
+  margin-top: -30px; /* Increase negative margin to move it up */
 }
 
 .place-order-left .title {
